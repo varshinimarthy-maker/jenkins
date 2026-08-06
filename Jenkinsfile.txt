@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Created successfully'
+            }
+        }
+
+        stage('Read File') {
+            steps {
+                bat 'type cicd.txt'
+            }
+        }
+    }
+}
