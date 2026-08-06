@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build and Test') {
+            steps {
+                echo "varshh"
+            }
+        }
+
+        stage('Generate Artifact') {
+            steps {
+                echo "heyy"
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "Pipeline created successfully"
+        }
+    }
+}
