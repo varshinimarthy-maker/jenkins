@@ -1,0 +1,1 @@
+write code for a simple user registration form for an event 

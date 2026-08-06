@@ -1,0 +1,153 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://img.magnific.com/free-vector/people-running-activity_24908-55948.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+
+h1{
+    text-align:center;
+    color:#ggf;
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#e796fa;
+    margin-bottom:30px;
+    font-size:17px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    color:white;
+    font-weight:500;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:14px 16px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    font-size:15px;
+    background:rgba(255,255,255,.85);
+    transition:.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    background:#fff;
+    box-shadow:0 0 12px rgba(76,175,80,.5);
+}
+
+textarea{
+    resize:none;
+}
+
+.radio-group{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    color:white;
+}
+
+.radio-group label{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    cursor:pointer;
+}
+
+.checkbox{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin:20px 0;
+    color:white;
+    font-size:14px;
+}
+
+.checkbox input{
+    width:auto;
+    margin-top:4px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#43a047,#66bb6a);
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(67,160,71,.45);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+#message{
+    text-align:center;
+    margin-top:18px;
+    font-weight:600;
+    color:#ggg;
+}
+
+::placeholder{
+    color:#555;
+}
+
+@media(max-width:700px){
+
+.container{
+    padding:25px;
+}
+
+h1{
+    font-size:28px;
+}
+
+.radio-group{
+    flex-direction:column;
+    gap:10px;
+}
+
+body{
+    padding:20px;
+}
+
+}
