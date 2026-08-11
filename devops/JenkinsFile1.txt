@@ -2,56 +2,32 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Checkout') {
-            steps {
-                echo 'Checking out source code...'
-                checkout scm
-            }
-        }
-
         stage('Build') {
             steps {
-                echo 'Building the project...'
+                echo 'Building project...'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
+                echo 'Testing project...'
             }
         }
 
-        stage('Code Quality') {
+        stage('Generate Artifact') {
             steps {
-                echo 'Checking code quality...'
-            }
-        }
-
-        stage('Package') {
-            steps {
-                echo 'Creating artifact...'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo 'Deploying application...'
+                echo 'Generating artifact...'
             }
         }
     }
 
     post {
         success {
-            echo 'Pipeline completed successfully!'
+            echo 'Pipeline created successfully!'
         }
 
         failure {
             echo 'Pipeline failed!'
-        }
-
-        always {
-            echo 'Pipeline execution finished.'
         }
     }
 }
