@@ -5,7 +5,7 @@ pipeline{
         {
           steps
           {
-            echo"heyy",
+            echo"heyy"
           }
         }
        }
